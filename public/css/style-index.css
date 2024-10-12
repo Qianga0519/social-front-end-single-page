@@ -919,32 +919,7 @@ main {
 
                         .item-comment-post {
                             .main-comment-post {
-                                display: flex;
-                                gap: 10px;
-
-                                img {
-                                    width: 40px;
-                                    height: 40px;
-                                    border-radius: 50%;
-                                }
-
-                                article {
-                                    background: var(--primary-color-white-light);
-                                    padding: 5px 20px;
-                                    border-radius: 10px;
-                                }
-
-
-                            }
-
-                            .list-comment-rep {
-                                margin-left: 50px;
-                                margin-top: 5px;
-                                display: flex;
-                                flex-direction: column;
-                                gap: 5px;
-
-                                .item-rep-comment-post {
+                                .content-cmt-user {
                                     display: flex;
                                     gap: 10px;
 
@@ -960,12 +935,98 @@ main {
                                         border-radius: 10px;
                                     }
                                 }
+
+                                form {
+                                    padding: 5px 2px;
+                                    width: 100%;
+                                    margin-left: 50px;
+
+                                    input {
+                                        padding: 2px 5px;
+                                        border: none;
+                                        outline: none;
+                                        background: var(--primary-color-white-light);
+                                        border-radius: 3px;
+
+                                        &:focus {
+                                            border: none;
+                                            outline: none;
+                                        }
+                                    }
+
+                                    button {
+                                        width: 30px;
+                                        height: 30px;
+                                        border: none;
+                                        outline: none;
+                                        background: none; &:hover{
+                                            color: var(--primary-color-blue);
+                                        }
+                                    }
+                                }
+
+                            }
+
+                            .list-comment-rep {
+                                margin-left: 50px;
+                                margin-top: 5px;
+                                display: flex;
+                                flex-direction: column;
+                                gap: 5px;
+
+                                .item-rep-comment-post {
+                                    .content-cmt-rep {
+                                        display: flex;
+                                        gap: 10px;
+
+                                        img {
+                                            width: 40px;
+                                            height: 40px;
+                                            border-radius: 50%;
+                                        }
+
+                                        article {
+                                            background: var(--primary-color-white-light);
+                                            padding: 5px 20px;
+                                            border-radius: 10px;
+                                        }
+                                    }
+
+                                    form {
+                                        padding: 5px 2px;
+                                        width: 100%;
+                                        margin-left: 50px;
+
+                                        input {
+                                            padding: 2px 5px;
+                                            border: none;
+                                            outline: none;
+                                            background: var(--primary-color-white-light);
+                                            border-radius: 3px;
+
+                                            &:focus {
+                                                border: none;
+                                                outline: none;
+                                            }
+                                        }
+
+                                        button {
+                                            width: 30px;
+                                            height: 30px;
+                                            border: none;
+                                            outline: none;
+                                            background: none;
+                                            &:hover{
+                                                color: var(--primary-color-blue);
+                                            }
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
                 }
             }
-
         }
 
     }
@@ -1075,7 +1136,7 @@ main {
                 form {
                     position: fixed;
                     bottom: 0;
-                   
+
                     padding: 10px;
                     width: 560px;
                     display: flex;
@@ -1105,9 +1166,9 @@ main {
                         width: 10%;
                         background: var(--primary-color-white);
                         color: var(--primary-color-black);
-                       
-                        &:hover{
-                           color: var(--primary-color-blue);
+
+                        &:hover {
+                            color: var(--primary-color-blue);
                         }
                     }
                 }
@@ -1819,6 +1880,7 @@ Extra extra large	xxl	≥1400px */
             }
         }
     }
+
     main {
         .wrapper-posts.tab-menu {
             .main-content.wrapper-chat {
@@ -1895,6 +1957,7 @@ Extra extra large	xxl	≥1400px */
 
         }
     }
+
     main {
         .wrapper-posts.tab-menu {
             .main-content.wrapper-chat {
