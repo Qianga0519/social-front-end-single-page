@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="public/fontawesome-free-6.6.0-web/css/all.min.css">
     <link rel="stylesheet" href="public/css/style-index.css">
     <link rel="stylesheet" href="public/css/style-login.css">
+    <link rel="stylesheet" href="public/css/style-forgot.css">
     <link rel="stylesheet" href="public/css/style-register.css">
     <link rel="stylesheet" href="public/css/style-profile.css">
 </head>
@@ -18,6 +19,29 @@
         <span class="closebtn" onclick="closeNotification()">&times;</span>
         <span> Thêm dữ liệu thành công!</span>
     </div>
+
+    <!--  Forgot password  -->
+    <section style="display:flex; " class="out-range-forgot">
+        <section class="forgot-form-layout">
+            <h1>Forgot</h1>
+            <form class="forgot-form">
+                <div class="logo">
+                    <a href=""><img src="public/images/logo.png" alt=""></a>
+                </div>
+                <div class="range-input">
+                    <div class="input-user">
+                        <input type="email" name="email" placeholder="Your email" required>
+
+                    </div>
+                    <div class="button-log-range">
+                        <button type="button" class="btn-send-forgot">Send</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </section>
+    <!--  End password  -->
+
     <!-- PAGE LOGIN  -->
     <section style="display:none; " class="out-range-login">
         <section class="login-form-layout">
@@ -73,7 +97,7 @@
         </section>
     </section>
     <!-- END PAGE REGISTER  -->
-    <section class="all-content-page " style="display: block;">
+    <section class="all-content-page " style="display: none;">
         <!-- HEADER  -->
         <header>
             <nav class="wrap-navbar">

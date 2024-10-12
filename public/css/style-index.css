@@ -2,26 +2,37 @@
 
 
 .notification-sys {
-    display: none; 
+    display: none;
     position: fixed;
     right: 20px;
     top: 20px;
-    background-color: var(--primary-color-blue); 
-    color: var(--primary-color-white); 
+    background-color: var(--primary-color-blue);
+    color: var(--primary-color-white);
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    animation: fadeIn 0.5s, fadeOut 0.5s 2s; 
+    animation: fadeIn 0.5s, fadeOut 0.5s 2s;
 }
+
 @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes fadeOut {
-    from {opacity: 1;}
-    to {opacity: 0;}
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
 }
 
 header {
@@ -297,6 +308,7 @@ main {
                     &:hover {
                         background-color: rgba(var(--primary-color-black-rgb), 0.1);
                     }
+
                     .btn-ban-user {
                         width: 40px;
                         margin-right: 5px;
@@ -304,10 +316,12 @@ main {
                         border: none;
                         outline: none;
                         border-radius: 4px;
-                        &:hover{
-                            i{
+
+                        &:hover {
+                            i {
                                 color: var(--primary-color-white);
                             }
+
                             background-color: var(--primary-color-blue);
                         }
 
@@ -2049,22 +2063,25 @@ Extra extra large	xxl	≥1400px */
 
             .right-content {
                 justify-self: self-start;
+
                 .right-space,
                 .content-right-space {
                     width: 220px;
-                    .list-friend-active{
-                        .item-friend{
-                            .item-friend-info{
-                                span{
+
+                    .list-friend-active {
+                        .item-friend {
+                            .item-friend-info {
+                                span {
                                     font-size: .6rem;
                                 }
                             }
                         }
                     }
-                    .wrapper-request{
-                        .item-request{
-                            .item-request-info{
-                                .item-request-info-name{
+
+                    .wrapper-request {
+                        .item-request {
+                            .item-request-info {
+                                .item-request-info-name {
                                     font-size: .6rem;
                                 }
                             }
