@@ -14,6 +14,10 @@
 </head>
 
 <body>
+    <div class="notification-sys" id="notification-sys">
+        <span class="closebtn" onclick="closeNotification()">&times;</span>
+        <span> Thêm dữ liệu thành công!</span>
+    </div>
     <!-- PAGE LOGIN  -->
     <section style="display:none; " class="out-range-login">
         <section class="login-form-layout">
@@ -110,7 +114,7 @@
                 </div>
                 <!-- END TAB LEFT CONTENT -->
                 <!-- TAB LIST POST  -->
-                <div class="main-content active  wrapper-list-post">
+                <div class="main-content   wrapper-list-post">
                     <div class="user-up-post">
                         <div class="user-avatat-up-post" href="">
                             <a href=""> <img class="user-up-post-image-link" src="./public/images/no-image.jpg" alt="">
@@ -202,7 +206,7 @@
                 </div>
                 <!-- END TAB LIST POST  -->
                 <!-- TAB DETAIL POST  -->
-                <div class="main-content   wrapper-detail-post">
+                <div class="main-content active  wrapper-detail-post">
                     <div class="view-post-detail">
                         <div class="user-post-info">
                             <section class="user-post-info-1">
@@ -297,6 +301,7 @@
                                         <form action="">
                                             <input type="text">
                                             <button><i class="fa-solid fa-paper-plane"></i></button>
+                                            <button><i class="fa fa-trash"></i></button>
                                         </form>
                                     </div>
                                     <!-- all rep -->
@@ -315,6 +320,7 @@
                                             <form action="">
                                                 <input type="text">
                                                 <button><i class="fa-solid fa-paper-plane"></i></button>
+                                                <button><i class="fa-solid fa-trash"></i></button>
                                             </form>
                                         </div>
                                         <div class="item-rep-comment-post">
@@ -331,6 +337,7 @@
                                             <form action="">
                                                 <input type="text">
                                                 <button><i class="fa-solid fa-paper-plane"></i></button>
+                                                <button><i class="fa-solid fa-trash"></i></button>
                                             </form>
                                         </div>
                                     </div>
@@ -658,7 +665,7 @@
                                     <span>Dang hoat dong</span>
                                 </div>
                                 <button class="btn-ban-user"><i class="fa-solid fa-ban"></i></button>
-                            </div>                                         
+                            </div>
                             <div class="item-friend">
                                 <div class="item-friend-image">
                                     <img src="/public/images/no-image.jpg" alt="">
@@ -668,7 +675,8 @@
                                     <span>Dang hoat dong</span>
                                 </div>
                                 <button class="btn-ban-user"><i class="fa-solid fa-ban"></i></button>
-                            </div>         <div class="item-friend">
+                            </div>
+                            <div class="item-friend">
                                 <div class="item-friend-image">
                                     <img src="/public/images/no-image.jpg" alt="">
                                 </div>
@@ -677,7 +685,7 @@
                                     <span>Dang hoat dong</span>
                                 </div>
                                 <button class="btn-ban-user"><i class="fa-solid fa-ban"></i></button>
-                            </div>        
+                            </div>
 
                         </div>
                         <div class="wrapper-request">
@@ -940,6 +948,16 @@
             chatContent.scrollTop = chatContent.scrollHeight;
         };
 
+        // sys notification 
+        function showNotification() {
+            const notification = document.getElementById('notification-sys');
+            notification.style.display = 'block'; // Hiện thông báo
+
+            // Tự động ẩn thông báo sau 3 giây
+            setTimeout(() => {
+                notification.style.display = 'none'; // Ẩn thông báo
+            }, 3000);
+        }
     </script>
     <script src="/public/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
 </body>
