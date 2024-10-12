@@ -247,10 +247,13 @@ main {
                     width: 100%;
                     background: var(--primary-color-white-light);
                     display: flex;
+
                     gap: 10px;
                     align-items: center;
                     box-sizing: unset;
+                    flex-direction: row;
                     border-radius: 10px;
+
 
                     .item-friend-image {
                         img {
@@ -265,12 +268,29 @@ main {
                         font-size: .8rem;
                         display: flex;
                         flex-direction: column;
+                        flex-grow: 1;
                     }
 
                     &:hover {
                         background-color: rgba(var(--primary-color-black-rgb), 0.1);
                     }
+                    .btn-ban-user {
+                        width: 40px;
+                        margin-right: 5px;
+                        height: 30px;
+                        border: none;
+                        outline: none;
+                        border-radius: 4px;
+                        &:hover{
+                            i{
+                                color: var(--primary-color-white);
+                            }
+                            background-color: var(--primary-color-blue);
+                        }
+
+                    }
                 }
+
 
 
                 .wrapper-request {
@@ -305,12 +325,11 @@ main {
                         }
 
                         .item-respon-request {
-
                             right: 10px;
                             padding-right: 20px;
                             justify-content: center;
                             display: flex;
-                            justify-content: center;
+
                             gap: 5px;
 
                             button {
@@ -326,6 +345,14 @@ main {
                                 background: var(--primary-color-blue);
                                 color: var(--primary-color-text-white);
 
+                                &:hover {
+                                    background-color: rgba(var(--primary-color-gray-rgb), .1);
+
+                                    i {
+                                        color: var(--primary-color-blue);
+                                    }
+                                }
+
                             }
 
                             button.item-respon-delete {
@@ -334,6 +361,11 @@ main {
 
                                 &:hover {
                                     background-color: rgba(var(--primary-color-black-rgb), .3);
+
+                                    i {
+                                        color: var(--primary-color-blue);
+                                    }
+
                                 }
                             }
                         }
@@ -847,8 +879,6 @@ main {
 
                         }
                     }
-
-
                 }
 
                 .range-interact-post {
@@ -959,7 +989,9 @@ main {
                                         height: 30px;
                                         border: none;
                                         outline: none;
-                                        background: none; &:hover{
+                                        background: none;
+
+                                        &:hover {
                                             color: var(--primary-color-blue);
                                         }
                                     }
@@ -1016,7 +1048,8 @@ main {
                                             border: none;
                                             outline: none;
                                             background: none;
-                                            &:hover{
+
+                                            &:hover {
                                                 color: var(--primary-color-blue);
                                             }
                                         }
@@ -1639,8 +1672,8 @@ footer {
     color: red;
 }
 
-#modal-created-post {
-
+#modal-created-post,
+#modal-edit-post {
     form {
         width: 600px;
         max-width: unset;
@@ -1993,11 +2026,29 @@ Extra extra large	xxl	≥1400px */
 
             .right-content {
                 justify-self: self-start;
-
                 .right-space,
                 .content-right-space {
                     width: 220px;
+                    .list-friend-active{
+                        .item-friend{
+                            .item-friend-info{
+                                span{
+                                    font-size: .6rem;
+                                }
+                            }
+                        }
+                    }
+                    .wrapper-request{
+                        .item-request{
+                            .item-request-info{
+                                .item-request-info-name{
+                                    font-size: .6rem;
+                                }
+                            }
+                        }
+                    }
                 }
+
             }
 
             .main-content.wrapper-list-post {

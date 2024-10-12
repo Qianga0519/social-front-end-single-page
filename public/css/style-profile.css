@@ -158,22 +158,20 @@ main#main-profile-user {
                     }
 
                     .user-post-info-2 {
-                        width: 20px;
-                        height: 20px;
                         display: flex;
                         justify-content: center;
                         align-items: center;
-
+                        gap: 10px;
                         button {
                             border: none;
                             outline: none;
                             font-weight: bold;
                             background: none;
                             color: var(--text-color-black);
-
                             &:hover {
                                 color: var(--text-color-gray);
                             }
+                          
                         }
                     }
                 }
