@@ -21,7 +21,7 @@
     </div>
 
     <!--  Forgot password  -->
-    <section style="display:flex; " class="out-range-forgot">
+    <section style="display:flex; display: none;" class="out-range-forgot">
         <section class="forgot-form-layout">
             <h1>Forgot</h1>
             <form class="forgot-form">
@@ -43,7 +43,7 @@
     <!--  End password  -->
 
     <!-- PAGE LOGIN  -->
-    <section style="display:none; " class="out-range-login">
+    <section style="display: flex;display:none; " class="out-range-login">
         <section class="login-form-layout">
             <h1>Login</h1>
             <form class="login-form">
@@ -72,7 +72,7 @@
     </section>
     <!-- END PAGE LOGIN  -->
     <!-- PAGE REGISTER  -->
-    <section style="display: none;" class="out-range-register">
+    <section style="display: flex;display:none;" class="out-range-register">
         <section class="register-form-layout">
             <h1>Register</h1>
             <form class="register-form">
@@ -97,7 +97,7 @@
         </section>
     </section>
     <!-- END PAGE REGISTER  -->
-    <section class="all-content-page " style="display: none;">
+    <section class="all-content-page" style="display: block;">
         <!-- HEADER  -->
         <header>
             <nav class="wrap-navbar">
@@ -125,7 +125,7 @@
         </header>
         <!-- END HEADER  -->
         <!-- ALL TABS  -->
-        <main style="display: BLOCK;">
+        <main style="display: none;">
             <div class="wrapper-posts tab-menu">
                 <!-- TAB LEFT CONTENT  -->
                 <div class="left-content">
@@ -230,7 +230,7 @@
                 </div>
                 <!-- END TAB LIST POST  -->
                 <!-- TAB DETAIL POST  -->
-                <div class="main-content active  wrapper-detail-post">
+                <div class="main-content   wrapper-detail-post">
                     <div class="view-post-detail">
                         <div class="user-post-info">
                             <section class="user-post-info-1">
@@ -427,7 +427,7 @@
                 </div>
                 <!-- END TAB DETAIL POST  -->
                 <!-- TAB CHAT  -->
-                <div class="main-content  wrapper-chat">
+                <div class="main-content   wrapper-chat">
                     <div class="info-friend-chat">
                         <div class="item-info-friend-chat">
                             <div class="item-friend-image-chat">
@@ -733,7 +733,7 @@
         </main>
         <!-- END ALL TABS  -->
         <!-- PAGE INFO USER  -->
-        <main style="display: NONE;" id="main-profile-user">
+        <main style="display: block;" id="main-profile-user">
             <div class="background-profile">
                 <div class="profile-image">
                     <img src="public/images/no-image.jpg" alt="">
@@ -767,6 +767,25 @@
                         </div>
                         <button>Update</button>
                     </form>
+                    <form action="">
+                        <h5>Change password</h5>
+                        <div class="profile-detail-range">
+                            <div class="input-profile-range">
+                                <label for="">Old password</label>
+                                <input type="email" value="old password">
+                            </div>
+                            <div class="input-profile-range">
+                                <label for="">New password</label>
+                                <input type="text" value="new password">
+                            </div>
+                            <div class="input-profile-range">
+                                <label for="">Repeat new password</label>
+                                <input type="text" value="repeat new password">
+                            </div>
+                        </div>
+                        <button>Change</button>
+                    </form>
+                    <button class="btn-user-logout">Logout</button>
                 </div>
                 <!--END USER INFO  -->
                 <div class="profile-list-post">

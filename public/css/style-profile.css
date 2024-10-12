@@ -88,6 +88,21 @@ main#main-profile-user {
 
             }
 
+            .btn-user-logout {
+                width: 100%;
+                margin: 10px 0;
+                border: 1px solid var(--text-color-gray);
+                border-radius: 5px;
+                outline: none;
+                padding: 5px 20px;
+                color: var(--text-color-gray);
+                background: rgba(var(var(--primary-color-black-rgb), .5));
+                &:hover{
+                    color: var(--primary-color-white);
+                    background-color: var(--primary-color-warning);
+                }
+            }
+
             h1 {
                 background: orange;
             }
@@ -162,16 +177,18 @@ main#main-profile-user {
                         justify-content: center;
                         align-items: center;
                         gap: 10px;
+
                         button {
                             border: none;
                             outline: none;
                             font-weight: bold;
                             background: none;
                             color: var(--text-color-black);
+
                             &:hover {
                                 color: var(--text-color-gray);
                             }
-                          
+
                         }
                     }
                 }
