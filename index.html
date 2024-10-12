@@ -15,7 +15,7 @@
 
 <body>
     <!-- PAGE LOGIN  -->
-    <section style="display:flex; display: none;" class="out-range-login">
+    <section style="display:none; " class="out-range-login">
         <section class="login-form-layout">
             <h1>Login</h1>
             <form class="login-form">
@@ -69,7 +69,10 @@
         </section>
     </section>
     <!-- END PAGE REGISTER  -->
-    <section class="all-content-page">
+
+
+
+    <section class="all-content-page " style="display: block;">
         <!-- HEADER  -->
         <header>
             <nav class="wrap-navbar">
@@ -97,7 +100,7 @@
         </header>
         <!-- END HEADER  -->
         <!-- ALL TABS  -->
-        <main>
+        <main style="display: block;">
             <div class="wrapper-posts tab-menu">
                 <!-- TAB LEFT CONTENT  -->
                 <div class="left-content">
@@ -110,7 +113,7 @@
                 </div>
                 <!-- END TAB LEFT CONTENT -->
                 <!-- TAB LIST POST  -->
-                <div class="main-content  wrapper-list-post">
+                <div class="main-content   wrapper-list-post">
                     <div class="user-up-post">
                         <div class="user-avatat-up-post" href="">
                             <a href=""> <img class="user-up-post-image-link" src="./public/images/no-image.jpg" alt="">
@@ -337,7 +340,7 @@
                 </div>
                 <!-- END TAB DETAIL POST  -->
                 <!-- TAB CHAT  -->
-                <div class="main-content  wrapper-chat">
+                <div class="main-content active wrapper-chat">
                     <div class="info-friend-chat">
                         <div class="item-info-friend-chat">
                             <div class="item-friend-image-chat">
@@ -350,68 +353,6 @@
                         </div>
                     </div>
                     <div class="range-chat-content">
-                        <div class="content-friend-chat">
-                            <img src="/public/images/no-image.jpg" alt="">
-                            <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis
-                                accusantiuiores!
-                            </article>
-                        </div>
-                        <div class="content-user-chat">
-                            <img src="/public/images/no-image.jpg" alt="">
-                            <article>fkashfkjshdj</article>
-                        </div>
-                        <div class="content-friend-chat">
-                            <img src="/public/images/no-image.jpg" alt="">
-                            <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis
-                                accusantium vitae voluptates cupiditate, quo delectus estlor sit amet consectetur
-                                adipisicing elit. Possimus perspiciatis
-                                accusantium vitae voluptates cupiditate, quo delectus est quibusdam reiciendis eaque
-                                tempore
-                                sint archmaiores!
-                            </article>
-                        </div>
-                        <div class="content-user-chat">
-                            <img src="/public/images/no-image.jpg" alt="">
-                            <article>fkashfkjshdj</article>
-                        </div>
-                        <div class="content-friend-chat">
-                            <img src="/public/images/no-image.jpg" alt="">
-                            <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis
-                                accusantium vitae voluptates cupiditate, quo delectus estlor sit amet consectetur
-                                adipisicing elit. Possimus perspiciatis
-                                accusantium vitae voluptates cupiditate, quo delectus est quibusdam reiciendis eaque
-                                tempore
-                                sint archmaiores!
-                            </article>
-                        </div>
-                        <div class="content-user-chat">
-                            <img src="/public/images/no-image.jpg" alt="">
-                            <article>fkashfkjshdj</article>
-                        </div>
-                        <div class="content-friend-chat">
-                            <img src="/public/images/no-image.jpg" alt="">
-                            <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis
-                                accusantium vitae voluptates cupiditate, quo delectus estlor sit amet consectetur
-                                adipisicing elit. Possimus perspiciatis
-                                accusantium vitae voluptates cupiditate, quo delectus est quibusdam reiciendis eaque
-                                tempore
-                                sint archmaiores!
-                            </article>
-                        </div>
-                        <div class="content-user-chat">
-                            <img src="/public/images/no-image.jpg" alt="">
-                            <article>fkashfkjshdj</article>
-                        </div>
-                        <div class="content-friend-chat">
-                            <img src="/public/images/no-image.jpg" alt="">
-                            <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis
-                                accusantium vitae voluptates cupiditate, quo delectus estlor sit amet consectetur
-                                adipisicing elit. Possimus perspiciatis
-                                accusantium vitae voluptates cupiditate, quo delectus est quibusdam reiciendis eaque
-                                tempore
-                                sint archmaiores!
-                            </article>
-                        </div>
                         <div class="content-user-chat">
                             <img src="/public/images/no-image.jpg" alt="">
                             <article>fkashfkjshdj</article>
@@ -449,13 +390,15 @@
                                 tempore
                                 sint architecto illo quam suscipit. Ipsa expedita sit maiores!
                             </article>
-                        </div>
-                        <div class="range-user-chat-input">
-                            <form action="">
-                                <input type="text">
-                            </form>
-                        </div>
+                        </div>   
+                                   
                     </div>
+                    <div class="range-user-chat-input">
+                        <form action="">
+                            <textarea name="" id=""></textarea>
+                            <button class=""><i class="fa-regular fa-paper-plane"></i></button>
+                        </form>
+                    </div>      
                 </div>
                 <!-- END TAB CHAT  -->
                 <!-- TAB NOTIFICATIONS -->
@@ -507,7 +450,7 @@
                 </div>
                 <!-- END TAB NOTIFICATIONS -->
                 <!-- TAB RESULT SEARCH -->
-                <div class="main-content active wrapper-search">
+                <div class="main-content  wrapper-search">
                     <div class="range-search-input filter-result">
                         <div class="search-input">
                             <div class="range-input-key">
